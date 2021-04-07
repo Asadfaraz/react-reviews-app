@@ -78,24 +78,31 @@ article {
   line-height: 25px;
 }
 
-.changeRev {
-  font-size: 25px;
-  color: skyblue;
-}
-
 .leftRev {
-  padding: 0 10px;
+  padding: 5px 10px;
   cursor: pointer;
   margin: 0 5px;
+  font-size: 25px;
+
+  border: none;
+  outline: none;
+  background: none;
+  color: skyblue;
 }
 .leftRev:hover {
   color: rgb(36, 178, 235);
 }
 
 .rightRev {
-  padding: 0 10px;
+  padding: 5px 10px;
   cursor: pointer;
   margin: 0 5px;
+  font-size: 25px;
+
+  border: none;
+  outline: none;
+  background: none;
+  color: skyblue;
 }
 .rightRev:hover {
   color: rgb(36, 178, 235);
@@ -109,6 +116,7 @@ article {
   outline: none;
   background-color: rgb(224, 245, 253);
   color: rgb(8, 144, 197);
+  cursor: pointer;
 
   /* HOVER OFF */
   -webkit-transition: 1s;

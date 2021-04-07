@@ -5,6 +5,9 @@ import { FaQuoteRight, FaChevronRight, FaChevronLeft } from "react-icons/fa";
 const Review = (props) => {
   // data
   const { name, job, image, text } = props.data;
+  const nextPerson = props.nextPerson;
+  const prevPerson = props.prevPerson;
+
   return (
     <div className={classes.main}>
       <h1>Our Reviews</h1>
@@ -21,8 +24,20 @@ const Review = (props) => {
           <p>{text}</p>
         </section>
         <div className={classes.changeRev}>
-          <FaChevronLeft className={classes.leftRev} />
-          <FaChevronRight className={classes.rightRev} />
+          <button
+            type="button"
+            className={classes.leftRev}
+            onClick={prevPerson}
+          >
+            <FaChevronLeft />
+          </button>
+          <button
+            type="button"
+            className={classes.rightRev}
+            onClick={nextPerson}
+          >
+            <FaChevronRight />
+          </button>
         </div>
         <div>
           <button type="button" className={classes.randomBtn}>
