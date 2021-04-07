@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(230, 241, 246);
+}
+
+.main {
+  text-align: center;
+  padding: 25px;
+}
+
+.main h1 {
+  font-size: 30px;
+  font-family: cursive;
+  margin: 0;
+  margin-top: 10px;
+}
+.main hr {
+  width: 20%;
+  border: 3px solid rgb(51, 171, 247);
+  border-radius: 5px;
+}
+
+article {
+  width: 70%;
+  background-color: white;
+  margin: 40px auto;
+  padding: 10px;
+  box-shadow: 2px 5px 15px 5px rgb(197, 197, 197);
+  border-radius: 5px;
+}
+
+.imagesection {
+  /* background-color: lightskyblue; */
+  width: 150px;
+  margin: 0 auto 0 auto;
+}
+
+.imagesection img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border-right: 8px solid rgb(88, 185, 245);
+}
+.quoteicon {
+  position: relative;
+  top: 45px;
+  left: -50px;
+  color: white;
+  padding: 10px;
+  background-color: rgb(88, 185, 245);
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+.infosection {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.infosection h3 {
+  margin: 0;
+  margin-top: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.infosection h4 {
+  margin: 0;
+  font-weight: 400;
+  color: rgb(51, 171, 247);
+}
+.infosection p {
+  color: rgb(119, 119, 119);
+  line-height: 25px;
+}
+
+.changeRev {
+  font-size: 25px;
+  color: skyblue;
+}
+
+.leftRev {
+  padding: 0 10px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+.leftRev:hover {
+  color: rgb(36, 178, 235);
+}
+
+.rightRev {
+  padding: 0 10px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+.rightRev:hover {
+  color: rgb(36, 178, 235);
+}
+
+.randomBtn {
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: rgb(224, 245, 253);
+  color: rgb(8, 144, 197);
+
+  /* HOVER OFF */
+  -webkit-transition: 1s;
+}
+.randomBtn:hover {
+  background-color: rgb(4, 145, 201);
+  color: black;
+  transition: 1s;
+}
