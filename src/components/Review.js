@@ -7,6 +7,7 @@ const Review = (props) => {
   const { name, job, image, text } = props.data;
   const nextPerson = props.nextPerson;
   const prevPerson = props.prevPerson;
+  const randomPrev = props.randomPrev;
 
   return (
     <div className={classes.main}>
@@ -40,7 +41,11 @@ const Review = (props) => {
           </button>
         </div>
         <div>
-          <button type="button" className={classes.randomBtn}>
+          <button
+            type="button"
+            className={classes.randomBtn}
+            onClick={randomPrev}
+          >
             Random Review
           </button>
         </div>

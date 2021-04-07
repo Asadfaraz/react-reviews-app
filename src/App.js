@@ -30,6 +30,19 @@ function App() {
     return person;
   };
 
+  // Random Button
+  const randomPrev = () => {
+    let newInd = Math.floor(Math.random() * data.length);
+
+    if (newInd === index) {
+      newInd += 1;
+      // console.log("clash");
+    }
+    // console.log("new index: ", newInd);
+    setIndex(checkIndex(newInd));
+  };
+
+  // ************** Returns **********************
   return (
     <div className="App">
       <section>
@@ -37,6 +50,7 @@ function App() {
           data={data[index]}
           nextPerson={nextPerson}
           prevPerson={prevPerson}
+          randomPrev={randomPrev}
         />
       </section>
     </div>
